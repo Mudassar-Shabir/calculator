@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.button {
+  padding: 15px;
+  font-size: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Operators like + - * / */
+.button.operator {
+  background-color: #ffd54f;
+  color: #000;
+}
+
+/* Clear button (C) */
+.button.clear {
+  background-color: #ef5350;
+  color: white;
+}
+
+/* Equals (=) button */
+.button.equals {
+  background-color: #66bb6a;
+  color: white;
+  grid-column: span 2; /* Optional: makes = wider if you use grid layout */
+}
